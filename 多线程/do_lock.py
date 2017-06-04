@@ -19,7 +19,7 @@ def run_thread(n):
     	try:
         	change_it(n)
     	finally:
-       		lock.release()#释放锁
+       		lock.release()#释放锁 
 
 t1 = threading.Thread(target=run_thread, args=(5,))
 t2 = threading.Thread(target=run_thread, args=(8,))
