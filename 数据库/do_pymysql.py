@@ -7,7 +7,7 @@ connection=pymysql.connect(
 	password='password',
 	db='test')
 cursor=connection.cursor()
-cursor.execute('insert into user (id,name)values (%s,%s)',['3','Huixihan'])
+cursor.execute('insert into user (id,name)values (%s,%s)',['4','Huixihan'])
 cursor.rowcount
 connection.commit()
 cursor.close()
